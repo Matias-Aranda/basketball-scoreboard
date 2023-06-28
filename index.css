@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    background: #1B244A;
+    text-align: center;
+    margin-top: 30;
+    display: flex;
+    align-items: center;
+    justify-content: center;;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.counter {
+    background-color: black;
+    height: 100px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+@font-face {
+  font-family: Timer;
+  src: url(Timer.tff);
+}
+
+.points{
+    font-family: Timer; 
+    color: #BE123C;
+    margin: 20px auto;
+    font-size: 60px;
+} 
+
+.label{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 0;
+    
+}
+
+.increment-btn{
+    margin-top: 20px;
+    background: #1B244A;
+    font-family: Timer;
+    padding: 8px;
+    color: #7687A7;
+    border: 1px solid #7687A7;
+    border-radius: 5px
+}
+
+#reset-btn {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 30px;
+    padding: 8px;
+    color: #7687A7;
+    border: 1px solid #7687A7;
+    border-radius: 5px;
+    background: #1B244A;
+}
+
+.crown {
+    height:  20px;
+    margin: 30px auto 10px;
+    font-size: 30px;
+}

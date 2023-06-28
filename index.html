@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="scoreboard">
+                <div>
+                    <p class="crown" id="home-crown"></p>
+                    <h3 class="label">HOME</h3>
+                    <div class="counter">
+                        <h1 class="points" id="home-points">0</h1> 
+                    </div>
+                    <div class="incrementer">
+                        <button class="increment-btn" onclick="addPoints(home, 1),checkLeader()">+1</button>
+                        <button class="increment-btn" onclick="addPoints(home, 2),checkLeader()">+2</button>
+                        <button class="increment-btn" onclick="addPoints(home, 3),checkLeader()">+3</button>
+                    </div>
+                </div>
+                <div>
+                    <p class="crown" id="guest-crown"></p>
+                    <h3 class="label">GUEST</h3>
+                    <div class="counter">
+                        <h1 class="points" id="guest-points">0</h1>   
+                    </div>
+                    <div class="incrementer">
+                        <button class="increment-btn" onclick="addPoints(guest, 1),checkLeader()">+1</button>
+                        <button class="increment-btn" onclick="addPoints(guest, 2),checkLeader()">+2</button>
+                        <button class="increment-btn" onclick="addPoints(guest, 3),checkLeader()">+3</button>
+                    </div>
+                </div>
+            </div>
+            <button id="reset-btn" onclick="reset(), checkLeader()">New Match</button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
